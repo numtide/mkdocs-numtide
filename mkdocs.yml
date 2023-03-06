@@ -1,0 +1,77 @@
+### Site metadata ###
+
+## - change this according to the relevant Numtide repo name
+site_name: NumTide custom mkDocs
+## - change this according to the relevant Numtide repo description
+site_description: MkDocs docs for custom base Repo
+## - change this according to the relevant Numtide repo docs location - eg https://numtide.github.io/treefmt/
+site_url: https://numtide.github.io/mkdocs-numtide 
+## - change this according to the relevant Numtide repo url
+repo_url: https://github.com/numtide/mkdocs-numtide 
+edit_uri: edit/main/docs
+
+### Build settings ###
+    
+theme:
+  name: 'material'
+##  custom_dir: material/.overrides
+    
+  palette:
+  # This is the default "light" theme
+    - scheme: default
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  # This is the default "Dark" theme
+    - scheme: slate
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+#     text: Montserrat
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  logo: assets/logo.png
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+  
+  ## - Set your docs navigation structure here
+  ## - this will determine which .md files are shown and where they appear in the header and sidebar navigation
+
+nav:
+  - About the project: index.md
+  ## - This example is taken from the active treefmt docs 
+  # - QuickStart:
+  #     - About: quickstart.md
+  #     - Installation: installation.md
+  #     - Configuration: treefmt-configuration.md
+  # - Usage: usage.md
+  # - Formatters: 
+  #     - About: index-formatters.md
+  #     - Formatter Specification: formatters-spec.md
+  #     - Known Formatters: formatters.md
+  # - FAQ: faq.md
+  # - Contributing: contributing.md
+
+extra_css:
+    - stylesheets/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/numtide
+      name: NumTide on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/numtide
+      name: NumTide on Twitter
+  generator: false # hide the line "Made with Material for MkDocs"
+      
+copyright: Copyright &copy; NumTide
+  
