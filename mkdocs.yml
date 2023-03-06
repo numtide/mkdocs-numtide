@@ -1,7 +1,7 @@
 ### Site metadata ###
 
-## - change this according to the relevant Numtide repo name
-site_name: NumTide custom mkDocs
+## - This will be the nasme displayed in docs header
+site_name: NumTide Custom Docs
 ## - change this according to the relevant Numtide repo description
 site_description: MkDocs docs for custom base Repo
 ## - change this according to the relevant Numtide repo docs location - eg https://numtide.github.io/treefmt/

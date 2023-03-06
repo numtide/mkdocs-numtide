@@ -4,32 +4,34 @@
 :root > *  {
   /* !important works here! */
   /* --md-primary-fg-color:        #cbdc38 !important; */
-  --md-primary-fg-color--light: #cbdc38;
-  --md-primary-fg-color--dark:  #4051b5;
   --md-text-font: Eurostile-Roman; 
 }
-
+/* light scheme */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #F58220;
-  --md-primary-fg-color--light: #F58220;
+  --md-primary-fg-color--light: #FBAA31;
   --md-primary-fg-color--dark: #D41F26;
   --md-accent-fg-color: #D41F26;
   --md-header-bg-color: #ffffff;
   --md-footer-bg-color: #939598;
   --md-text-font: Eurostile-Roman; 
+  --md-default-fg-color: #58595B;
+  --md-default-fg-color--light: #D41F26;
+  --md-text-font: Eurostile-Roman; 
 }
 
 /* dark scheme as set in .yaml */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #F58220;
-  /* --md-primary-fg-color--light: #EB5822;
-  --md-primary-fg-color--dark: #D41F26;
-  --md-accent-fg-color: #D41F26;
-  --md-header-bg-color: #ffffff; */
+  --md-primary-fg-color: #546d78;
+  --md-primary-fg-color--light: #FBAA31;
   --md-typeset-color: #E9EBFC !important;
+  --md-default-fg-color: #E9EBFC;
+  --md-typeset-a-color: #546d78 !important;
+  --md-default-fg-color--light: #FBAA31;
   --md-text-font: Eurostile-Roman; 
 }
 
+/* unused - example of custom dark theme */
 [data-md-color-scheme="shanesDarkTheme"] {
   --md-primary-fg-color: #D41F26;
   --md-primary-fg-color--light: #EB5822;
@@ -54,20 +56,21 @@
 
 .md-header__title {
     color: #ffffff;
-/*     color: #58595B; */
     font-size: 1.4rem;
 }
 
 /* search input in header */
 .md-search__form {
-/*     background-color: #58595b;; */
     height: 1.8rem;
-/*     border-radius: 24px; */
     margin: 9px 0;
 }
 
 .md-search-result__meta {
     margin-top: 0.3rem;
+}
+
+.md-tabs__link {
+  font-size: .8rem;
 }
 
 /* --------------------------- Navigation --------------------------- */
@@ -80,9 +83,8 @@
 }
 
 .md-nav {
-    font-size: .9rem;
+    font-size: .8rem;
     line-height: 1.3;
-    color: #58595B
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -93,10 +95,13 @@
   padding-right: 0 !important;
 }
 
+.md-nav__link--passed {
+  color: #FBAA31;
+}
+
 /* --------------------------- font stuff --------------------------- */
 
 .md-typeset h1 {
-    color: #D41F26;
     font-size: 1.75rem;
     line-height: 1.3;
     margin: 0 0 1.25em;
@@ -104,20 +109,17 @@
 }
 
 .md-typeset h2 {
-    color: #F58220;;
-/*   color: #58595B; */
+    color: #F58220;
     font-weight: 500;
     line-height: 1.3;
-    margin: 0 0 1.25em */
+    margin: 0 0 1.25em
 }
 
-.md-typeset {
-  color: #58595B
+.md-typeset h3 {
+  color: #F58220;
 }
 
 /* highlights / links */
 .md-typeset a {
     color: #FBAA31;
 }
-
-
