@@ -4,15 +4,15 @@ For full documentation visit [mkdocs-material](https://squidfunk.github.io/mkdoc
 
 here are the base steps:
 
-### 1. Clone the repo you want to add mcDocs to.
+#### 1. Clone the repo you want to add mcDocs to.
 
-### 2. Install material for mkDocs on your machine (using Python3 pip)
+#### 2. Install material for mkDocs on your machine (using Python3 pip)
 
 `python3 -m pip install mkdocs-material`
 
-(This is a global installation - only needs doing first time)
+(This is a global installation - only needs doing first time or if yu want to run mkdocs locally)
 
-### 3. initiate mkDocs
+#### 3. initiate mkDocs
 
 This step only needs doing if you don't already have a docs folder.
 If you have docs already jump to step 4.
@@ -34,7 +34,7 @@ This will create the following structure:
 
 ** make sure your .md files are all in the docs folder
 
-### 4. customize the mkdocs.yaml file for Urls and Navigation
+#### 4. customize the mkdocs.yaml file for Urls and Navigation
 
 Copy the custom mkdocs.yaml file into the root and
 edit the following for your repo:
@@ -56,50 +56,28 @@ Set the navigation structure:
 This will determine which .md files in the docs folder are shown and where they appear in the header and sidebar navigation
 This example is taken from the active treefmt docs:
 
-  `- About the project: introduction.md`
-
-  `- QuickStart:`
-
-      `- About: quickstart.md`
-
-      `- Installation: installation.md`
-
-      `- Configuration: treefmt-configuration.md`
-
-  `- Usage: usage.md`
-
-  `- Formatters: `
-
-      `- About: index-formatters.md`
-
-      `- Formatter Specification: formatters-spec.md`
-
-      `- Known Formatters: formatters.md`
-
-  `- FAQ: faq.md`
-
-  `- Contributing: contributing.md`
-
-### 5. Copy custom Assets and stylesheets folders 
+See the nav section in the treefmt
+<a href="https://github.com/numtide/treefmt/blob/main/mkdocs.yml" target="_blank">example.</a>
+#### 5. Copy custom Assets and stylesheets folders 
 
 Copy custom Assets and stylesheets folders and contents into the docs folder
 
-### 6. Edit index.md file to be the landing docs page
+#### 6. Edit index.md file to be the landing docs page
 
 mkDocs needs an index.md page so it needs to be included and should be your landing page
 
-### 7. build your site locally to test
+#### 7. build your site locally to test
 
 from terminal in root local repo folder run :
 `mkdocs serve`
 
 Point your browser to localhost:8000 and you should see the documentation
 
-### 8. setup github workflow for docs deployment
+#### 8. setup github workflow for docs deployment
 
 Copy the deployMkDocs.yaml file to your .github/workflows folder
 
-### 9. setup github repo pages in settings
+#### 9. setup github repo pages in settings
 
 Goto repo settings/Pages and set the following:
 
@@ -107,7 +85,7 @@ Goto repo settings/Pages and set the following:
 	
 	Branch = gh-pages and folder = /(root)
 
-### 10. final project layout
+#### 10. final project layout
 
     mkdocs.yml          # The configuration file.
     docs/
@@ -118,7 +96,7 @@ Goto repo settings/Pages and set the following:
 
 
 
-### Commands
+#### mkDocs Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
