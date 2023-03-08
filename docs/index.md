@@ -10,7 +10,7 @@ here are the base steps:
 
 `python3 -m pip install mkdocs-material`
 
-(This is a global installation - only needs doing first time or if yu want to run mkdocs locally)
+(This is a global installation - only needs doing first time or if you want to run mkdocs locally)
 
 #### 3. initiate mkDocs
 
@@ -24,13 +24,13 @@ This will set up docs folder, index.md and mkdocs.yaml file (note the fullstop)
 
 This will create the following structure:
 
-├─ docs/
+	├─ docs/
 
-        └─ index.md
+        	└─ index.md
 
-        └─ ** add your .md files here !
+        	└─ ** add your .md files here !
 
-└─ mkdocs.yml
+	└─ mkdocs.yml
 
 ** make sure your .md files are all in the docs folder
 
@@ -39,7 +39,7 @@ This will create the following structure:
 Copy the custom mkdocs.yaml file into the root and
 edit the following for your repo:
 
-`site_name:` - change this according to the relevant Numtide repo name
+`site_name:` - This will be the name displayed in docs header
 
 `site_description:` - change this according to the relevant Numtide repo description
 
