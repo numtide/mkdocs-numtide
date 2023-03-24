@@ -1,0 +1,58 @@
+copyright: Copyright &copy; Numtide
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/numtide
+      name: Numtide on Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/numtide
+      name: Numtide on Twitter
+  generator: false # hide the line "Made with Material for MkDocs"
+
+extra_css:
+  - https://numtide.github.io/mkdocs-numtide/stylesheets/extra.css
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.escapeall
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+
+theme:
+  name: 'material'
+  palette:
+    - scheme: default
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/logo.png
+  logo: assets/logo.png
+
+  features:
+    - tabs
+    - instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
+    - content.code.annotate
+    - content.tabs.link
