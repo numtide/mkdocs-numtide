@@ -30,14 +30,14 @@
 
             src = builtins.path {
               name = "src-${name}-docs";
-              path = src + /docs;
+              path = src + "/docs";
             };
 
             # Re-create the folder structure since mkdocs insists on having the
             # mkdocs.yml at the root of the repo.
             unpackPhase = ''
               cp -r --no-preserve=mode $src docs
-              cp ${src + /mkdocs.yml} mkdocs.yml
+              cp ${src + "/mkdocs.yml"} mkdocs.yml
             '';
 
             nativeBuildInputs = [
