@@ -1,14 +1,19 @@
 { pkgs ? import <nixpkgs> { } }:
 let
   mkdocs-markdownextradata-plugin = pkgs.python3Packages.callPackage ./mkdocs-markdownextradata-plugin { };
+  mkdocs-rss-plugin = pkgs.python3Packages.callPackage ./mkdocs-rss-plugin {
+    inherit validator-collection;
+  };
+  validator-collection = pkgs.python3Packages.callPackage ./validator-collection { };
 in
 pkgs.runCommand "mkdocs"
 {
   buildInputs = [
+    mkdocs-markdownextradata-plugin
+    mkdocs-rss-plugin
     pkgs.mkdocs
     pkgs.python3Packages.mkdocs-material
     pkgs.python3Packages.mkdocs-redirects
-    mkdocs-markdownextradata-plugin
   ];
 } ''
   mkdir -p $out/bin
