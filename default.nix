@@ -7,6 +7,7 @@ pkgs.runCommand "mkdocs"
   buildInputs = [
     pkgs.mkdocs
     pkgs.python3Packages.mkdocs-material
+    pkgs.python3Packages.mkdocs-redirects
     mkdocs-markdownextradata-plugin
   ];
 } ''
