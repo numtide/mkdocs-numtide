@@ -12,8 +12,10 @@ pkgs.runCommand "mkdocs"
     mkdocs-markdownextradata-plugin
     mkdocs-rss-plugin
     pkgs.mkdocs
+    pkgs.python3Packages.cairosvg
     pkgs.python3Packages.mkdocs-material
     pkgs.python3Packages.mkdocs-redirects
+    pkgs.python3Packages.pillow
   ];
 } ''
   mkdir -p $out/bin
