@@ -1,9 +1,13 @@
 { pkgs ? import <nixpkgs> { } }:
+let
+  mkdocs-markdownextradata-plugin = pkgs.python3Packages.callPackage ./mkdocs-markdownextradata-plugin { };
+in
 pkgs.runCommand "mkdocs"
 {
   buildInputs = [
     pkgs.mkdocs
     pkgs.python3Packages.mkdocs-material
+    mkdocs-markdownextradata-plugin
   ];
 } ''
   mkdir -p $out/bin
