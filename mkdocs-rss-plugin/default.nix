@@ -25,7 +25,7 @@ buildPythonPackage rec {
     owner = "Guts";
     repo = pname;
     rev = version;
-    hash = "sha256-yQR2Lqq3qbXUM1/ZXkBDPF1yV2wCE/BHv4Qhod4dD+M=";
+    hash = "sha256-EWgkcG1jOSP7lPVBH2GT/NGVIL0kEkYgt9uQThn3EBo=";
     leaveDotGit = true;
   };
 
