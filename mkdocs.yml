@@ -2,8 +2,10 @@ INHERIT: !ENV MKDOCS_NUMTIDE_THEME
 
 ### Site metadata ###
 
+
+
 ## - This will be the name displayed in docs header
-site_name: NumTide custom docs
+site_name: Numtide custom docs
 ## - change this according to the relevant Numtide repo description
 site_description: Custom MkDocs base Repo
 ## - change this according to the relevant Numtide repo docs location - eg https://numtide.github.io/treefmt/

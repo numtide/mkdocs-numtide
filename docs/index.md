@@ -1,4 +1,5 @@
-# NumTide Material for MkDocs base repo
+# Numtide Material for MkDocs base repo
+
 
 For full documentation visit [mkdocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/).
 

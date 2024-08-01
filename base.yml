@@ -26,6 +26,10 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist
 
+plugins:
+  - search
+  - awesome-pages
+
 theme:
   name: 'material'
   palette:
