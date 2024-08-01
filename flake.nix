@@ -53,6 +53,8 @@
             installPhase = ''
               mv site $out
             '';
+
+            passthru.mkdocs = self.packages.${pkgs.system}.default;
           };
       });
 

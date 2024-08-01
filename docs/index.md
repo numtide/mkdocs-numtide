@@ -1,6 +1,5 @@
 # Numtide Material for MkDocs base repo
 
-
 For full documentation visit [mkdocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/).
 
 here are the base steps:
@@ -20,17 +19,14 @@ If you have docs already jump to step 4.
 
 Go to the root directory of your cloned project and run mkdocs.
 This will set up docs folder, index.md and mkdocs.yaml file (note the fullstop)
-		
+
     `mkdocs new .`
 
 This will create the following structure:
 
 	├─ docs/
-
         	└─ index.md
-
         	└─ ** add your .md files here !
-
 	└─ mkdocs.yml
 
 ** make sure your .md files are all in the docs folder

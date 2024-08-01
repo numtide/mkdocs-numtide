@@ -2,8 +2,6 @@ INHERIT: !ENV MKDOCS_NUMTIDE_THEME
 
 ### Site metadata ###
 
-
-
 ## - This will be the name displayed in docs header
 site_name: Numtide custom docs
 ## - change this according to the relevant Numtide repo description
@@ -14,11 +12,3 @@ site_url: https://numtide.github.io/mkdocs-numtide
 repo_url: https://github.com/numtide/mkdocs-numtide 
 repo_name: 'numtide/mkdocs-numtide'
 edit_uri: edit/main/docs
-
-### Build settings ###
-
-## - Set your docs navigation structure here
-## - this will determine which .md files are shown and where they appear in the header and sidebar navigation
-nav:
-  - About the project: index.md
-  ## - See the nav section in this working example - https://github.com/numtide/treefmt/blob/main/mkdocs.yml
