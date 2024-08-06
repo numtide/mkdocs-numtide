@@ -29,6 +29,7 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - markdownextradata
 
 theme:
   name: 'material'
