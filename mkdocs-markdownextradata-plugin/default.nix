@@ -11,6 +11,7 @@
 buildPythonPackage rec {
   pname = "mkdocs-markdownextradata-plugin";
   version = "0.2.5";
+  format = "setuptools";
 
   disabled = !isPy3k;
 
