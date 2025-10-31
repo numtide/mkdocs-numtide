@@ -14,7 +14,7 @@
       packages = eachSystem (pkgs: {
         default = import ./. { inherit pkgs; };
 
-        docs = self.lib.${pkgs.system}.mkDocs {
+        docs = self.lib.${pkgs.stdenv.hostPlatform.system}.mkDocs {
           name = "mkdocs-numtide";
           src = ./.;
         };
@@ -43,7 +43,7 @@
             '';
 
             nativeBuildInputs = [
-              self.packages.${pkgs.system}.default
+              self.packages.${pkgs.stdenv.hostPlatform.system}.default
             ];
 
             buildPhase = ''
@@ -54,14 +54,14 @@
               mv site $out
             '';
 
-            passthru.mkdocs = self.packages.${pkgs.system}.default;
+            passthru.mkdocs = self.packages.${pkgs.stdenv.hostPlatform.system}.default;
           };
       });
 
       devShells = eachSystem (pkgs: {
         default = pkgs.mkShellNoCC {
           packages = [
-            self.packages.${pkgs.system}.default
+            self.packages.${pkgs.stdenv.hostPlatform.system}.default
           ];
         };
       });
