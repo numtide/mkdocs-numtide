@@ -16,7 +16,7 @@ jobs:
   gh-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - uses: cachix/install-nix-action@v20
       - uses: cachix/cachix-action@v12
         with:
