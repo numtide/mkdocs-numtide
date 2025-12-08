@@ -9,6 +9,7 @@ pkgs.runCommand "mkdocs"
     pkgs.mkdocs
     pkgs.python3Packages.cairosvg
     pkgs.python3Packages.mkdocs-awesome-nav
+    pkgs.python3Packages.mkdocs-git-revision-date-localized-plugin
     pkgs.python3Packages.mkdocs-material
     pkgs.python3Packages.mkdocs-redirects
     pkgs.python3Packages.pillow
