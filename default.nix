@@ -8,6 +8,7 @@ pkgs.runCommand "mkdocs"
     mkdocs-markdownextradata-plugin
     pkgs.mkdocs
     pkgs.python3Packages.cairosvg
+    pkgs.python3Packages.mike
     pkgs.python3Packages.mkdocs-awesome-nav
     pkgs.python3Packages.mkdocs-git-revision-date-localized-plugin
     pkgs.python3Packages.mkdocs-material
@@ -24,4 +25,13 @@ pkgs.runCommand "mkdocs"
   exec ${pkgs.mkdocs}/bin/mkdocs "\$@"
   MKDOCS
   chmod +x $out/bin/mkdocs
+
+  cat <<MIKE > $out/bin/mike
+  #!${pkgs.bash}/bin/bash
+  set -euo pipefail
+  export PYTHONPATH=$PYTHONPATH
+  export MKDOCS_NUMTIDE_THEME=${./.}/base.yml
+  exec ${pkgs.python3Packages.mike}/bin/mike "\$@"
+  MIKE
+  chmod +x $out/bin/mike
 ''
