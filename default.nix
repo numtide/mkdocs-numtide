@@ -1,10 +1,12 @@
 { pkgs ? import <nixpkgs> { } }:
 let
   mkdocs-markdownextradata-plugin = pkgs.python3Packages.callPackage ./mkdocs-markdownextradata-plugin { };
+  material-plausible-plugin = pkgs.python3Packages.callPackage ./material-plausible-plugin { };
 in
 pkgs.runCommand "mkdocs"
 {
   buildInputs = [
+    material-plausible-plugin
     mkdocs-markdownextradata-plugin
     pkgs.mkdocs
     pkgs.python3Packages.cairosvg
